@@ -1,0 +1,19 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name a
+      %ul.top-items__icons
+        %li.top-items__icons__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.top-items__icons__edit
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .side-bar__group-list
+    = link_to "#" do
+      .group
+        %p.group__group-name a
+        %p.group__group-message a
+      .group
+        %p.group__group-name a
+        %p.group__group-message a
