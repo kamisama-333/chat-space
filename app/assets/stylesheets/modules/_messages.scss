@@ -38,15 +38,16 @@
         width: 300px;
         padding: 20px 20px 0;
         .group {
-          color: #ffffff;
           text-decoration: none;
           margin-bottom: 40px;
           &__group-name {
             font-size: 15px;
             margin-bottom: 5px;
+            color: #ffffff;
           }
           &__group-message {
              font-size: 11px;
+             color: #ffffff;
           }
         }
     }
