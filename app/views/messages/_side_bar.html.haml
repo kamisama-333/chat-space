@@ -8,13 +8,13 @@
           = link_to new_group_path do
             = icon('fas', 'edit')
         %li.top-items__icons__edit
-          = link_to edit_user_path(current_user.id) do
+          = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
   .side-bar__group-list
     - current_user.groups.each do |group|
       .group
-        = link_to "#" do
-          %p.group__group-name 
+        = link_to group_messages_path(group) do
+          .group__group-name 
             = group.name
-          %p.group__group-message 
-            メッセジーはまだありません
+          .group__group-message 
+            = group.show_last_message
